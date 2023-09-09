@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #797777;
+}
+
+.section {
+    display: none;
+    padding: 20px;
+}
+
+.center-iframe {
+    display: flex;
+    justify-content: center;
+}
+
+.inicio-header {
+    background: url('img/hotel1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.inicio-header h1 {
+    font-size: 76px;
+    margin: 0;
+}
+
+/* Define los estilos específicos para .nav dentro de .inicio-header */
+.inicio-header .nav {
+    text-align: center;
+    background-color: #e0e7ce;
+    color: rgba(0, 0, 0, 0);
+    padding: 7px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.inicio-header .nav a {
+    display: inline-block;
+    margin: 0 10px;
+    color: rgb(17, 8, 8);
+    text-decoration: none;
+}
+
+.inicio-header .nav a:hover {
+    background-color: #797777; 
+}
+
+/* Estilos para las tarjetas de ofertas y planes */
+.card {
+    margin: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px; /* Ancho de la tarjeta */
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card p {
+    margin: 10px 0;
+}
+/* Estilos para las tarjetas de eventos y planes */
+.card {
+    margin: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px; /* Ancho de la tarjeta */
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
