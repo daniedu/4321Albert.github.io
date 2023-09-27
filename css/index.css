@@ -1229,7 +1229,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .room-container {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
 }
