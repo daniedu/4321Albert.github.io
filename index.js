@@ -83,7 +83,7 @@ plusButton.addEventListener("click", () => {
 function showRoomDetails(roomIndex) {
   let room = rooms[roomIndex];
   roomPriceSpan.textContent = room.price;
-  roomDetailsModal.style.display = "block";
+  roomDetailsModal.style.display = "flex";
   roomDetails.textContent = room.description;
   roomDetailsHeader.textContent = room.name;
   numberOfNightsInput.addEventListener("input", function () {
