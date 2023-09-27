@@ -83,7 +83,7 @@ plusButton.addEventListener("click", () => {
 function showRoomDetails(roomIndex) {
   let room = rooms[roomIndex];
   roomPriceSpan.textContent = room.price;
-  roomDetailsModal.style.display = "flex";
+  roomDetailsModal.style.display = "block";
   roomDetails.textContent = room.description;
   roomDetailsHeader.textContent = room.name;
   numberOfNightsInput.addEventListener("input", function () {
@@ -115,7 +115,7 @@ showAllRoomsButton.addEventListener("click", function () {
     roomContainer.style.display === "none" ||
     roomContainer.style.display === ""
   ) {
-    roomContainer.style.display = "block";
+    roomContainer.style.display = "flex";
     showAllRoomsButton.textContent = "Mostrar menos habitaciones";
   } else {
     roomContainer.style.display = "none";
