@@ -5,8 +5,5 @@ class Usuario extends \RedBeanPHP\SimpleModel {
     public $email;
     
     // Establecer relaciones
-    public function bean() {
-        return $this->ownReserva;
-    }
+    public $reservasRealizadas;
 }
-?>

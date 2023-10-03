@@ -5,8 +5,6 @@ class Servicio extends \RedBeanPHP\SimpleModel {
     public $precio;
     
     // Establecer relaciones
-    public function bean() {
-        return $this->sharedReserva;
-    }
+    public $reservaAsignada;
+    
 }
-?>
