@@ -15,7 +15,6 @@ DB_HOST=localhost
 DB_USER=root
 DB_DATABASE=unadproyect
 DB_PASS=""
-
 ```
 
 - `DB_HOST`: La dirección del servidor de la base de datos. Puedes cambiarlo si la base de datos se encuentra en un servidor diferente.
