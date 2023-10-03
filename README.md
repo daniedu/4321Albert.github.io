@@ -10,10 +10,13 @@ Este proyecto utiliza un archivo `.env` para configurar las variables de entorno
 
 Ejemplos
 
-DB_HOST="localhost"
-DB_USER="root"
-DB_DATABASE="root"
+```
+DB_HOST=localhost
+DB_USER=root
+DB_DATABASE=unadproyect
 DB_PASS=""
+
+```
 
 - `DB_HOST`: La dirección del servidor de la base de datos. Puedes cambiarlo si la base de datos se encuentra en un servidor diferente.
 - `DB_USER`: El nombre de usuario para acceder a la base de datos.
