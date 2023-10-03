@@ -1,5 +1,17 @@
 <?php
 // require 'readBean/rb.php';
+require 'config.php';
+
+// Now you can access the environment variables using $_ENV
+$dbHost = $_ENV['DB_HOST'];
+$dbUser = $_ENV['DB_USER'];
+$dbDatabase = $_ENV['DB_DATABASE'];
+$dbPass = $_ENV['DB_PASS'];
+
+// Print Valores
+// echo "Database Host: " . $dbHost;
+// echo "Database User: " . $dbUser;
+// echo "Database Pass: " . $dbPass;
 
 require 'readBean/rb-mysql.php';
 
@@ -10,8 +22,9 @@ require_once 'modelos/Usuario.php';
 require_once 'modelos/Reserva.php';
 require_once 'modelos/Descuento.php';
 
-
-R::setup('mysql:host=localhost:3306;dbname=unadproyect', 'root', '');
+$dns = "mysql:host=$dbHost:3306;dbname=$dbDatabase";
+echo "DNS" . $dns;
+R::setup($dns, $dbUser, $dataPass);
 R::freeze(false);
 
 // Import CRUD classes
