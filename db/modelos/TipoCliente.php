@@ -4,8 +4,5 @@ class TipoCliente extends \RedBeanPHP\SimpleModel {
     public $nombre;
     
     // Establecer relaciones
-    public function bean() {
-        return $this->ownUsuario;
-    }
+    public $usuariosConEsteTipo;
 }
-?>

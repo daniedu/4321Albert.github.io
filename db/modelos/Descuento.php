@@ -5,8 +5,5 @@ class Descuento extends \RedBeanPHP\SimpleModel {
     public $cantidadServicios;
     
     // Establecer relaciones
-    public function reserva() {
-        return $this->sharedReserva;
-    }
+    public $descuentoReserva;
 }
-?>
