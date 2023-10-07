@@ -102,6 +102,9 @@
           <li class="navigation-item">
             <a href="#clientes-section" class="navigation-link">Clientes</a>
           </li>
+          <li class="navigation-item">
+           <a href="db/cotizacion.php" class="navigation-link" id="cotizar-link" target="_blank">Cotiza tu reserva</a>
+          </li>
         </ul>
 
         <div class="copyright">
