@@ -2,7 +2,6 @@
 // require 'readBean/rb.php';
 require 'config.php';
 
-// Now you can access the environment variables using $_ENV
 $dbHost = $_ENV['DB_HOST'];
 $dbUser = $_ENV['DB_USER'];
 $dbDatabase = $_ENV['DB_DATABASE'];
@@ -35,41 +34,41 @@ require 'CRUD/SucursalCRUD.php';
 require 'CRUD/TipoClienteCRUD.php';
 require 'CRUD/UsuarioCRUD.php';
 
-// Test the CRUD methods
-$servicioId = ServicioCRUD::create('Servicio de Prueba', 25.0);
-$servicioId = ServicioCRUD::create('Servicio de Prueba2', 25.0);
-$servicioId = ServicioCRUD::create('Servicio de Prueba3', 25.0);
-$servicioId = ServicioCRUD::create('Servicio de Prueba4', 25.0);
-$servicioId = ServicioCRUD::create('Servicio de Prueba5', 25.0);
-$servicioId = ServicioCRUD::create('Servicio de Prueba6', 25.0);
-$servicio = ServicioCRUD::read($servicioId);
-if ($servicio) {
-    echo "Service Name: {$servicio->nombre}, Price: {$servicio->precio}\n";
+// // Test the CRUD methods
+// $servicioId = ServicioCRUD::create('Servicio de Prueba', 25.0);
+// $servicioId = ServicioCRUD::create('Servicio de Prueba2', 25.0);
+// $servicioId = ServicioCRUD::create('Servicio de Prueba3', 25.0);
+// $servicioId = ServicioCRUD::create('Servicio de Prueba4', 25.0);
+// $servicioId = ServicioCRUD::create('Servicio de Prueba5', 25.0);
+// $servicioId = ServicioCRUD::create('Servicio de Prueba6', 25.0);
+// $servicio = ServicioCRUD::read($servicioId);
+// if ($servicio) {
+//     echo "Service Name: {$servicio->nombre}, Price: {$servicio->precio}\n";
 
-    // Update the service
-    ServicioCRUD::update($servicioId, 'Updated Service', 30.0);
-    $updatedService = ServicioCRUD::read($servicioId);
-    if ($updatedService) {
-        echo "Updated Service Name: {$updatedService->nombre}, Price: {$updatedService->precio}\n";
-    } else {
-        echo "Service not found after update.\n";
-    }
+//     // Update the service
+//     ServicioCRUD::update($servicioId, 'Updated Service', 30.0);
+//     $updatedService = ServicioCRUD::read($servicioId);
+//     if ($updatedService) {
+//         echo "Updated Service Name: {$updatedService->nombre}, Price: {$updatedService->precio}\n";
+//     } else {
+//         echo "Service not found after update.\n";
+//     }
 
-    // Delete the service
-    if (ServicioCRUD::delete($servicioId)) {
-        echo "Service deleted.\n";
-    } else {
-        echo "Failed to delete service.\n";
-    }
-} else {
-    echo "Service not found.\n";
-}
+//     // Delete the service
+//     if (ServicioCRUD::delete($servicioId)) {
+//         echo "Service deleted.\n";
+//     } else {
+//         echo "Failed to delete service.\n";
+//     }
+// } else {
+//     echo "Service not found.\n";
+// }
 
-// Test the listByPage method
-$page = 1;
-$itemsPerPage = 10;
-$services = ServicioCRUD::listByPage($page, $itemsPerPage);
-echo "Services on Page $page:\n";
-foreach ($services as $service) {
-    echo "Service Name: {$service->nombre}, Price: {$service->precio}\n";
-}
+// // Test the listByPage method
+// $page = 1;
+// $itemsPerPage = 10;
+// $services = ServicioCRUD::listByPage($page, $itemsPerPage);
+// echo "Services on Page $page:\n";
+// foreach ($services as $service) {
+//     echo "Service Name: {$service->nombre}, Price: {$service->precio}\n";
+// }
