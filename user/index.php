@@ -11,7 +11,10 @@
 <body>
     <div class="container">
         <?php
-        if (isset($_POST['form_type']) && $_POST['form_type'] === 'login') {
+        if (isset($_SESSION['user_id'])) {
+            // If the user is already logged in, show their dashboard or page
+            include('user_dashboard.php'); // Change 'user_dashboard.php' to the actual page
+        } elseif (isset($_POST['form_type']) && $_POST['form_type'] === 'login') {
             include('login.php');
         } else {
             include('register.php');
