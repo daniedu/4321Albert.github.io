@@ -1,0 +1,78 @@
+:root {
+  --primary-bg: #222;
+  --secondary-bg: #eee;
+  --primary-text: #fff;
+  --secondary-text: #555;
+  --accent-primary: #f88ef8; /* Rosa */
+  --accent-secondary: #f34141; /* Rojo */
+  --accent-heading: #ca86de; /* Lavanda */
+  --accent-text: #deaa86; /* Melocotón */
+  --accent-highlight: #b85d1c; /* Cobre */
+  --accent-subtext: #333; /* Gris Oscuro */
+  --accent-subtext-light: #777; /* Gris Claro */
+  --accent-light: #ddd; /* Gris Claro */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.paper {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-align: left; /* Adjusted label alignment to the left */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* Added styles to align the labels and inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+label {
+  display: block;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form-switch-button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
