@@ -1,6 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require '../db/db.php';
+    require '../userSession/session.php';
     ini_set('display_errors', 0);
     error_reporting(E_ALL & ~E_NOTICE);
     $errors = [];
@@ -20,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = UsuarioCrud::login($username, $password);
         echo "New User" . $user;
         if ($user !== null) {
+            SessionManager::setSessionData('user_id', $user['id']); 
             header('Location: dashboard.php');
             exit();
         } else {
@@ -28,6 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<div class="container">
 <div class="paper">
     <h2>Login</h2>
     <form action="login.php" method="POST">
@@ -41,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
     <form action="index.php" method="POST">
         <input type="hidden" name="form_type" value="register">
-        <button type="submit" class="form-switch-button">Registrarme</button>
+        <a href="register.php" type="submit" class="form-switch-button">Registrarme</a>
     </form>
+</div>
 </div>

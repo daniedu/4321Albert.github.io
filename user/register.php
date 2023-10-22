@@ -56,7 +56,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- ... (your existing code) ... -->
 </head>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <link rel="stylesheet" href="../css/user.css">
+</head>
 <body>
+<div class="container">
     <div class="paper">
         <h2>Registro</h2>
         <form action="register.php" method="POST">
@@ -79,9 +86,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
         <form action="index.php" method="POST">
             <input type="hidden" name="form_type" value="login">
-            <button type="submit" class="form-switch-button">Iniciar Sesión</button>
+            <a href="login.php" type="submit" class="form-switch-button">Iniciar Sesión</a>
         </form>
     </div>
+</body>
 </body>
 
 </html>
