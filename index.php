@@ -127,8 +127,11 @@
             <img src="img/sweet.png" width="80" />
           </div>
           <h3 class="hotel-heading">Sweet Dreams</h3>
+          <div class="user-actions">
+            <a href="user/login.php" class="login-button">Iniciar sesion</a>
+            <a href="user/register.php" class="register-button">Registrarse</a>
+          </div>
         </div>
-
         <div class="banner">
           <h1 class="banner-heading">Bienvenido a Sweet Dreams</h1>
           <p class="banner-paragraph">Haz que se cumplan tus sueños</p>
