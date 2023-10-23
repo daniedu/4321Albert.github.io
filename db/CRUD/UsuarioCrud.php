@@ -27,12 +27,26 @@ class UsuarioCRUD
         return R::load('usuario', $usuarioId);
     }
 
-    public static function update($usuarioId, $nombre, $email)
+    public static function updatePassword($usuarioId, $password)
+    {
+        $usuario = R::load('usuario', $usuarioId);
+        if ($usuario) {
+            $usuario->password = $password;
+
+            R::store($usuario);
+            return true;
+        }
+        return false;
+    }
+    public static function update($usuarioId, $nombre, $apellidos, $email, $username)
     {
         $usuario = R::load('usuario', $usuarioId);
         if ($usuario) {
             $usuario->nombre = $nombre;
+            $usuario->apellidos = $apellidos;
             $usuario->email = $email;
+            $usuario->username = $username;
+
             R::store($usuario);
             return true;
         }
