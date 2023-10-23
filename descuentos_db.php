@@ -1,5 +1,5 @@
 <?php
-require 'readBean/rb-mysql.php';
+require './db/readBean/rb-mysql.php';
 
 // Set up RedBean connection
 $servidor = "localhost";
@@ -52,5 +52,3 @@ R::store($cotizacion);
 echo "Data saved successfully.";
 
 echo "<script>window.close();</script>";
-?>
-
