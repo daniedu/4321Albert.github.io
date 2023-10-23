@@ -15,6 +15,7 @@ body {
   justify-content: flex-end;
   margin-right: 6px;
 }
+
 .login-button {
   background-color: transparent;
   border: none;
@@ -258,6 +259,7 @@ body {
   display: flex;
   cursor: pointer;
   align-items: center;
+  background-color: "gray";
 }
 
 .hotel-heading {
