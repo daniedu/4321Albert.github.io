@@ -1,60 +1,35 @@
+<!-- Compañero Cristian Sepulveda -->
+<!-- src="https://github.com/CristhianSepulveda/Ejemplo.github.io" -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/newBooking.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="user-info">
-            <h2>User Information</h2>
-            <?php
-            require '../db/userSession/session.php';
-            SessionManager::startSession();
+    <h1>Reservación de Servicios</h1>
+    <form action="procesar_reserva.php" method="post">
+        <label for="sucursal">Selecciona una sucursal:</label>
+        <select name="sucursal" id="sucursal">
+            <option value="sucursal1">Sucursal 1</option>
+            <option value="sucursal2">Sucursal 2</option>
+            <option value="sucursal3">Sucursal 3</option>
+        </select>
 
-            // Assuming you've already set the session data as mentioned
-            $userId = SessionManager::getSessionData('user_id');
-            $userName = SessionManager::getSessionData('user_name');
-            $userEmail = SessionManager::getSessionData('user_email');
-            $userSurNames = SessionManager::getSessionData('user_surNames');
-            $userUser = SessionManager::getSessionData('user_user');
+        <label for="servicio">Selecciona el servicio a reservar:</label>
+        <select name="servicio" id="servicio">
+            <option value="servicio1">Servicio 1</option>
+            <option value="servicio2">Servicio 2</option>
+            <option value="servicio3">Servicio 3</option>
+        </select>
 
-            echo '<p><strong>ID:</strong> ' . $userId . '</p>';
-            echo '<p><strong>Name:</strong> ' . $userName . '</p>';
-            echo '<p><strong>Email:</strong> ' . $userEmail . '</p>';
-            echo '<p><strong>Surnames:</strong> ' . $userSurNames . '</p>';
-            echo '<p><strong>Username:</strong> ' . $userUser . '</p>';
-            ?>
-        </div>
+        <label for="fecha">Fecha de reserva:</label>
+        <input type="date" name="fecha" id="fecha">
 
-        <div class="booking-section">
-            <div class="action-buttons">
-                <button class="action-button" onclick="editProfile()">Editar Usuario</button>
-                <button class="action-button" onclick="showBookingHistory()">Historial</button>
-                <button class="action-button" onclick="createNewBooking()">Reservar</button>
-            </div>
-        </div>
-    </div>
+        <input type="submit" value="Apartar y Pagar">
+    </form>
 </body>
-<script>
-    function editProfile() {
-        window.location.href = 'editUser.php';
-    }
-
-    function showBookingHistory() {
-        window.location.href = '/bookings/bookingHistory.php';
-    }
-
-    function createNewBooking() {
-        window.location.href = '/bookings/createBooking.php';
-    }
-</script>
 
 </html>
