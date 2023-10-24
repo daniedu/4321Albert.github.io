@@ -92,8 +92,38 @@ function showRoomDetails(roomIndex) {
   });
 
   reserveButton.onclick = function () {
-    alert("Reservado por " + numberOfNightsInput.value + " noches!");
-    roomDetailsModal.style.display = "none";
+    let numberOfNights = parseInt(numberOfNightsInput.value) || 1;
+    let roomName = room.name;
+    let totalPrice = room.price * numberOfNights;
+
+    // Crear un objeto con los datos de la reserva
+    let reservationData = {
+      roomName: roomName,
+      numberOfNights: numberOfNights,
+      totalPrice: totalPrice,
+    };
+
+    // Realizar una solicitud POST para enviar los datos al servidor
+    fetch("procesar_reserva.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(reservationData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        alert(
+          "Reservado por " +
+            numberOfNights +
+            " noches. Respuesta del servidor: " +
+            data.message
+        );
+        roomDetailsModal.style.display = "none";
+      })
+      .catch((error) => {
+        console.error("Error al procesar la reserva: ", error);
+      });
   };
 }
 
@@ -319,6 +349,7 @@ window.onclick = function (event) {
     eventModal.style.display = "none";
   }
 };
+
 function apuntarseAlEvento() {
   alert("Te has apuntado al evento. ¡Gracias!");
   eventModal.style.display = "none";

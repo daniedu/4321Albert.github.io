@@ -38,9 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="user-info">
             <?php
             require '../db/userSession/session.php';
-
+            SessionManager::startSession();
             // $userId = SessionManager::getSessionData('user_id');
-            $userName = SessionManager::getSessionData('user_name');
+            $userName = SessionManager::getSessionData('user_user');
             // $userEmail = SessionManager::getSessionData('user_email');
             // $userSurNames = SessionManager::getSessionData('user_surNames');
             // $userUser = SessionManager::getSessionData('user_user');
