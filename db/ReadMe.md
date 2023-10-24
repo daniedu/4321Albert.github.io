@@ -1,7 +1,5 @@
 ### Configuración Inicial
 
-Antes de crear la clase, es importante configurar RedBeanPHP y la base de datos:
-
 ```php
 require 'rb.php'; // Importa RedBeanPHP
 
