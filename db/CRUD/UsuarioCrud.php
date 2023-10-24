@@ -1,4 +1,6 @@
+
 <?php
+
 class UsuarioCRUD
 {
     public static function create($nombre, $apellidos, $email, $username, $password)
