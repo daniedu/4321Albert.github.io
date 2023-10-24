@@ -78,7 +78,3 @@ ProductoCRUD::delete($productoId);
 Este es un ejemplo básico de cómo crear una clase CRUD utilizando RedBeanPHP para interactuar con una tabla de base de datos en PHP. Puedes adaptar este enfoque a tus necesidades y a otras tablas de tu base de datos. Asegúrate de que la tabla de la base de datos tenga las columnas adecuadas en este ejemplo.
 
 ```
-
-```
-
-```
