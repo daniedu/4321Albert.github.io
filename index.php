@@ -101,7 +101,7 @@
         </div>
         <h3 class="hotel-heading">Sweet Dreams</h3>
         <div class="user-actions">
-          <a href="user/login.php" class="login-button">Iniciar sesion</a>
+          <a href="user/login.php" class="login-button login">Iniciar sesion</a>
           <a href="user/register.php" class="register-button">Registrarse</a>
         </div>
       </div>
