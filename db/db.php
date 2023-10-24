@@ -1,15 +1,11 @@
 <?php
-// require 'readBean/rb.php';
-require 'config.php';
+require 'readBean/rb-mysql.php';
 
-$dbHost = $_ENV['DB_HOST'];
-// $dbHost = "localhost";
-$dbUser = $_ENV['DB_USER'];
-// $dbUser = "root";
-$dbDatabase = $_ENV['DB_DATABASE'];
-// $dbDatabase = "unadProyect";
-$dbPass = $_ENV['DB_PASS'];
-// $dbPass = "";
+// Set up RedBean connection
+$servidor = "localhost";
+$usuario = "root";
+$contrasena = "";
+$basedatos = "unadproyect";
 
 // Print Valores
 // echo "Database Host: " . $dbHost;
@@ -25,9 +21,8 @@ require 'readBean/rb-mysql.php';
 // require_once 'modelos/Reserva.php';
 // require_once 'modelos/Descuento.php';
 
-$dns = "mysql:host=$dbHost:3306;dbname=$dbDatabase";
-// echo "DNS" . $dns;
-R::setup($dns, $dbUser, $dbPass);
+$dns = "mysql:host=$servidor:3306;dbname=$basedatos";
+R::setup($dns, $usuario, $contrasena);
 R::freeze(false);
 
 // Import CRUD classes
