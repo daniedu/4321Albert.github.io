@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: editUser.php');
         exit();
     } elseif (isset($_POST['reservar'])) {
-        header('Location: reservar.php');
+        header('Location: /app-web/index.php');
         exit();
     } elseif (isset($_POST['historial'])) {
         header('Location: posts/historial.php');
