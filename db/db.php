@@ -1,5 +1,5 @@
 <?php
-require 'readBean/rb-mysql.php';
+// require 'readBean/rb-mysql.php';
 
 // Set up RedBean connection
 $servidor = "localhost";
