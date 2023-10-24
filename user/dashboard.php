@@ -1,3 +1,25 @@
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    if (isset($_POST['editUser'])) {
+        header('Location: editUser.php');
+        exit();
+    } elseif (isset($_POST['reservar'])) {
+        header('Location: reservar.php');
+        exit();
+    } elseif (isset($_POST['historial'])) {
+        header('Location: posts/historial.php');
+        exit();
+    } elseif (isset($_POST['logout'])) {
+        header('Location: posts/logout.php');
+        exit();
+    } elseif (isset($_POST['deleteAccount'])) {
+        header('Location: posts/deleteAccount.php');
+        exit();
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,47 +36,36 @@
 <body>
     <div class="container">
         <div class="user-info">
-            <h2>User Information</h2>
             <?php
             require '../db/userSession/session.php';
-            SessionManager::startSession();
 
-            // Assuming you've already set the session data as mentioned
-            $userId = SessionManager::getSessionData('user_id');
+            // $userId = SessionManager::getSessionData('user_id');
             $userName = SessionManager::getSessionData('user_name');
-            $userEmail = SessionManager::getSessionData('user_email');
-            $userSurNames = SessionManager::getSessionData('user_surNames');
-            $userUser = SessionManager::getSessionData('user_user');
+            // $userEmail = SessionManager::getSessionData('user_email');
+            // $userSurNames = SessionManager::getSessionData('user_surNames');
+            // $userUser = SessionManager::getSessionData('user_user');
 
-            echo '<p><strong>ID:</strong> ' . $userId . '</p>';
-            echo '<p><strong>Name:</strong> ' . $userName . '</p>';
-            echo '<p><strong>Email:</strong> ' . $userEmail . '</p>';
-            echo '<p><strong>Surnames:</strong> ' . $userSurNames . '</p>';
-            echo '<p><strong>Username:</strong> ' . $userUser . '</p>';
+            echo '<h2>Bienvenido de Vuelta ' . $userName . '</h2>';
+            // echo '<p><strong>Name:</strong> ' . $userName . '</p>';
+            // echo '<p><strong>Email:</strong> ' . $userEmail . '</p>';
+            // echo '<p><strong>Surnames:</strong> ' . $userSurNames . '</p>';
+            // echo '<p><strong>Username:</strong> ' . $userUser . '</p>';
             ?>
         </div>
 
         <div class="booking-section">
             <div class="action-buttons">
-                <button class="action-button" onclick="editProfile()">Editar Usuario</button>
-                <button class="action-button" onclick="showBookingHistory()">Historial</button>
-                <button class="action-button" onclick="createNewBooking()">Reservar</button>
+                <form action="dashboard.php" method="POST">
+                    <button type="submit" class="edit-button" name="editUser">Editar Usuario</button>
+                    <button type="submit" class="edit-button" name="reservar">Reservar</button>
+                    <button type="submit" class="booking-button" name="historial">Historial</button>
+                    <button type="submit" class="logout-button" name="logout">Cerrar Sesión</button>
+                    <button type="submit" class="logout-button" name="deleteAccount">Borrar Cuenta</button>
+                </form>
+
             </div>
         </div>
     </div>
 </body>
-<script>
-    function editProfile() {
-        window.location.href = 'editUser.php';
-    }
-
-    function showBookingHistory() {
-        window.location.href = '/bookings/bookingHistory.php';
-    }
-
-    function createNewBooking() {
-        window.location.href = '/bookings/createBooking.php';
-    }
-</script>
 
 </html>
