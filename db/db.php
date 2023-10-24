@@ -2,14 +2,14 @@
 // require 'readBean/rb.php';
 require 'config.php';
 
-// $dbHost = $_ENV['DB_HOST'];
-$dbHost = "localhost";
-// $dbUser = $_ENV['DB_USER'];
-$dbUser = "root";
-// $dbDatabase = $_ENV['DB_DATABASE'];
-$dbDatabase = "unadProyect";
-// $dbPass = $_ENV['DB_PASS'];
-$dbPass = "";
+$dbHost = $_ENV['DB_HOST'];
+// $dbHost = "localhost";
+$dbUser = $_ENV['DB_USER'];
+// $dbUser = "root";
+$dbDatabase = $_ENV['DB_DATABASE'];
+// $dbDatabase = "unadProyect";
+$dbPass = $_ENV['DB_PASS'];
+// $dbPass = "";
 
 // Print Valores
 // echo "Database Host: " . $dbHost;
