@@ -8,8 +8,6 @@ require 'rb.php'; // Importa RedBeanPHP
 // Configura RedBeanPHP con tus credenciales de base de datos
 R::setup('mysql:host=localhost;dbname=tu_base_de_datos', 'tu_usuario', 'tu_contraseña');
 R::freeze(true); // Activa el modo de producción
-Creando la Clase ProductoCRUD
-A continuación, crearemos la clase ProductoCRUD con métodos para realizar operaciones CRUD en la tabla "productos":
 ```
 
 ```php
@@ -63,7 +61,6 @@ Utilizando la Clase ProductoCRUD
 Ahora puedes utilizar la clase ProductoCRUD para realizar operaciones CRUD en la tabla de productos:
 
 ```php
-Copy code
 // Ejemplo de creación de un nuevo producto
 $productoId = ProductoCRUD::create('Producto de Ejemplo', 19.99);
 
@@ -75,6 +72,4 @@ ProductoCRUD::update($productoId, 'Nuevo Nombre', 29.99);
 
 // Ejemplo de eliminación de un producto
 ProductoCRUD::delete($productoId);
-Este es un ejemplo básico de cómo crear una clase CRUD utilizando RedBeanPHP para interactuar con una tabla de base de datos en PHP. Puedes adaptar este enfoque a tus necesidades y a otras tablas de tu base de datos. Asegúrate de que la tabla de la base de datos tenga las columnas adecuadas en este ejemplo.
-
 ```
