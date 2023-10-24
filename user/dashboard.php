@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: editUser.php');
         exit();
     } elseif (isset($_POST['reservar'])) {
-        header('Location: reservar.php');
+        header('Location: /app-web/index.php');
         exit();
     } elseif (isset($_POST['historial'])) {
         header('Location: posts/historial.php');
@@ -38,9 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="user-info">
             <?php
             require '../db/userSession/session.php';
-
+            SessionManager::startSession();
             // $userId = SessionManager::getSessionData('user_id');
-            $userName = SessionManager::getSessionData('user_name');
+            $userName = SessionManager::getSessionData('user_user');
             // $userEmail = SessionManager::getSessionData('user_email');
             // $userSurNames = SessionManager::getSessionData('user_surNames');
             // $userUser = SessionManager::getSessionData('user_user');
