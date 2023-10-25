@@ -57,8 +57,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="action-buttons">
                 <form action="dashboard.php" method="POST">
                     <button type="submit" class="edit-button" name="editUser">Editar Usuario</button>
-                    <button type="submit" class="edit-button" name="reservar">Reservar</button>
-                    <button type="submit" class="booking-button" name="historial">Historial</button>
+                    <!-- <button type="submit" class="edit-button" name="reservar">Reservar</button> -->
+                    <!-- <button type="submit" class="booking-button" name="historial">Historial</button> -->
                     <button type="submit" class="logout-button" name="logout">Cerrar Sesión</button>
                     <button type="submit" class="logout-button" name="deleteAccount">Borrar Cuenta</button>
                 </form>
