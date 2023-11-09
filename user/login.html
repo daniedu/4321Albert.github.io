@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require '../db/db.php';
     require '../db/userSession/session.php';
@@ -33,29 +33,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
-?>
+?> -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration and Login</title>
-    <link rel="stylesheet" href="../css/user.css">
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="hotel, sweet, dreams, login" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration and Login</title>
+  <link rel="stylesheet" href="../css/user.css" />
 </head>
 <div class="container">
-    <div class="paper">
-        <h2>Login</h2>
-        <form action="login.php" method="POST">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
+  <div class="paper">
+    <h2>Login</h2>
+    <form action="login.php" method="POST">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" name="username" required />
 
-            <label for="login-password">Contraseña:</label>
-            <input type="password" id="login-password" name="login-password" required>
+      <label for="login-password">Contraseña:</label>
+      <input
+        type="password"
+        id="login-password"
+        name="login-password"
+        required
+      />
 
-            <button type="submit" class="login-button">Iniciar Sesion</button>
-        </form>
-        <form action="index.php" method="POST">
-            <input type="hidden" name="form_type" value="register">
-            <a href="register.php" type="submit" class="form-switch-button">Registrarme</a>
-        </form>
-    </div>
+      <button type="submit" class="login-button">Iniciar Sesion</button>
+    </form>
+    <form action="index.php" method="POST">
+      <input type="hidden" name="form_type" value="register" />
+      <a href="register.php" type="submit" class="form-switch-button"
+        >Registrarme</a
+      >
+    </form>
+  </div>
 </div>
