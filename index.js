@@ -92,8 +92,18 @@ function showRoomDetails(roomIndex) {
   });
 
   reserveButton.onclick = function () {
-    alert("Reservado por " + numberOfNightsInput.value + " noches!");
-    roomDetailsModal.style.display = "none";
+    let numberOfNights = parseInt(numberOfNightsInput.value) || 1;
+    let roomName = room.name;
+    let totalPrice = room.price * numberOfNights;
+
+    // Crear un objeto con los datos de la reserva
+    let reservationData = {
+      roomName: roomName,
+      numberOfNights: numberOfNights,
+      totalPrice: totalPrice,
+    };
+
+    openPostPage("hi.php", reservationData);
   };
 }
 
@@ -319,7 +329,24 @@ window.onclick = function (event) {
     eventModal.style.display = "none";
   }
 };
+
 function apuntarseAlEvento() {
   alert("Te has apuntado al evento. ¡Gracias!");
   eventModal.style.display = "none";
+}
+function openPostPage(url, data) {
+  var form = document.createElement("form");
+  document.body.appendChild(form);
+  form.target = "_blank";
+  form.method = "post";
+  form.action = url;
+  for (var name in data) {
+    var input = document.createElement("input");
+    input.type = "hidden";
+    input.name = name;
+    input.value = data[name];
+    form.appendChild(input);
+  }
+  form.submit();
+  document.body.removeChild(form);
 }
