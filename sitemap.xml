@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página Principal -->
+  <url>
+    <loc>https://daniedu.github.io/4321Albert.github.io/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Página de Usuarios / Login -->
+  <url>
+    <loc>https://daniedu.github.io/4321Albert.github.io/users/login</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Página de Usuarios / Registro -->
+  <url>
+    <loc>https://daniedu.github.io/4321Albert.github.io/users/register</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
