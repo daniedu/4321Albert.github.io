@@ -10,14 +10,20 @@
 
   <!-- Página de Usuarios / Login -->
   <url>
-    <loc>https://daniedu.github.io/4321Albert.github.io/users/login</loc>
+    <loc>https://daniedu.github.io/4321Albert.github.io/users/login.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Página de Usuarios / Registro -->
   <url>
-    <loc>https://daniedu.github.io/4321Albert.github.io/users/register</loc>
+    <loc>https://daniedu.github.io/4321Albert.github.io/users/register.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Página de Blogs -->
+  <url>
+    <loc>https://daniedu.github.io/4321Albert.github.io/blog/informacionGeneral.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
