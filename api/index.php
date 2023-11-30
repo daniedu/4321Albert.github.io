@@ -658,6 +658,6 @@
   </section>
 </body>
 
-<script src="index.js"></script>
+<script src="main.js"></script>
 
 </html>
