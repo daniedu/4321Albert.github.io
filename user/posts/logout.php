@@ -2,8 +2,10 @@
 require '../../db/db.php';
 // require '../../db/CRUD/UsuarioCrud.php';
 require '../../db/userSession/session.php';
+SessionManager::startSession();
 SessionManager::destroySession();
 $successMessage = "Logged out successfully!";
+header("Location: /")
 ?>
 <!DOCTYPE html>
 <html lang="en">
