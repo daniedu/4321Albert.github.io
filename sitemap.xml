@@ -27,5 +27,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Página de Reservas -->
+  <url>
+    <loc>https://daniedu.github.io/4321Albert.github.io/bookings/newBooking.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Página de Cotizaciones -->
+  <url>
+    <loc>https://daniedu.github.io/4321Albert.github.io/cotizaciones/cotizaciones.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
