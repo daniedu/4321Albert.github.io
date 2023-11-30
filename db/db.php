@@ -14,13 +14,6 @@ $basedatos = "unadproyect";
 
 require 'readBean/rb-mysql.php';
 
-// require_once 'modelos/Sucursal.php';
-// require_once 'modelos/Servicio.php';
-// require_once 'modelos/TipoCliente.php';
-// require_once 'modelos/Usuario.php';
-// require_once 'modelos/Reserva.php';
-// require_once 'modelos/Descuento.php';
-
 $dns = "mysql:host=$servidor:3306;dbname=$basedatos";
 R::setup($dns, $usuario, $contrasena);
 R::freeze(false);
