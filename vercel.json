@@ -12,56 +12,56 @@
   ],
   "rewrites": [
     {
-      "source": "/:path*.js",
-      "destination": "/:path*.js"
+      "src": "/:path*.js",
+      "dest": "/:path*.js"
     },
     {
-      "source": "/:path*.css",
-      "destination": "/:path*.css"
+      "src": "/:path*.css",
+      "dest": "/:path*.css"
     },
     {
-      "source": "/:path*.png",
-      "destination": "/:path*.png"
+      "src": "/:path*.png",
+      "dest": "/:path*.png"
     },
     {
-      "source": "/:path*.jpeg",
-      "destination": "/:path*.jpeg"
+      "src": "/:path*.jpeg",
+      "dest": "/:path*.jpeg"
     },
     {
-      "source": "/:path*.jpg",
-      "destination": "/:path*.jpg"
+      "src": "/:path*.jpg",
+      "dest": "/:path*.jpg"
     },
     {
-      "source": "/:path*.gif",
-      "destination": "/:path*.gif"
+      "src": "/:path*.gif",
+      "dest": "/:path*.gif"
     },
     {
-      "source": "/:path*.svg",
-      "destination": "/:path*.svg"
+      "src": "/:path*.svg",
+      "dest": "/:path*.svg"
     },
     {
-      "source": "/:path*.woff",
-      "destination": "/:path*.woff"
+      "src": "/:path*.woff",
+      "dest": "/:path*.woff"
     },
     {
-      "source": "/:path*.woff2",
-      "destination": "/:path*.woff2"
+      "src": "/:path*.woff2",
+      "dest": "/:path*.woff2"
     },
     {
-      "source": "/:path*.eot",
-      "destination": "/:path*.eot"
+      "src": "/:path*.eot",
+      "dest": "/:path*.eot"
     },
     {
-      "source": "/:path*.ttf",
-      "destination": "/:path*.ttf"
+      "src": "/:path*.ttf",
+      "dest": "/:path*.ttf"
     },
     {
-      "source": "/:path*.otf",
-      "destination": "/:path*.otf"
+      "src": "/:path*.otf",
+      "dest": "/:path*.otf"
     },
     {
-      "source": "/:path*",
-      "destination": "/index.html"
+      "src": "/:path*",
+      "dest": "/index.html"
     }
   ]
 }
