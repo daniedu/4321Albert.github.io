@@ -459,7 +459,7 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
 }
 
-.room-/img {
+.room-img {
   width: 100%;
 }
 
@@ -910,7 +910,7 @@ body {
   transform: scale(1.05);
 }
 
-.event-/img {
+.event-img {
   max-width: 100%;
   height: auto;
 }
@@ -1009,7 +1009,7 @@ body {
   transform: scale(1.05);
 }
 
-.event-/img {
+.event-img {
   max-width: 100%;
   height: auto;
 }
