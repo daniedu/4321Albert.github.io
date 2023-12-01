@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet" />
   <link rel="canonical" href="https://daniedu.github.io/4321Albert.github.io/" />
-  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="/css/index.css" />
 </head>
 
 <body>
