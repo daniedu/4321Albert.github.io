@@ -9,59 +9,5 @@
     { "src": "/css/style.css", "dest": "/css/style.css" },
     { "src": "/css/index.css", "dest": "/css/index.css" },
     { "src": "/js/script.js", "dest": "/js/script.js" }
-  ],
-  "rewrites": [
-    {
-      "src": "/:path*.js",
-      "dest": "/:path*.js"
-    },
-    {
-      "src": "/:path*.css",
-      "dest": "/:path*.css"
-    },
-    {
-      "src": "/:path*.png",
-      "dest": "/:path*.png"
-    },
-    {
-      "src": "/:path*.jpeg",
-      "dest": "/:path*.jpeg"
-    },
-    {
-      "src": "/:path*.jpg",
-      "dest": "/:path*.jpg"
-    },
-    {
-      "src": "/:path*.gif",
-      "dest": "/:path*.gif"
-    },
-    {
-      "src": "/:path*.svg",
-      "dest": "/:path*.svg"
-    },
-    {
-      "src": "/:path*.woff",
-      "dest": "/:path*.woff"
-    },
-    {
-      "src": "/:path*.woff2",
-      "dest": "/:path*.woff2"
-    },
-    {
-      "src": "/:path*.eot",
-      "dest": "/:path*.eot"
-    },
-    {
-      "src": "/:path*.ttf",
-      "dest": "/:path*.ttf"
-    },
-    {
-      "src": "/:path*.otf",
-      "dest": "/:path*.otf"
-    },
-    {
-      "src": "/:path*",
-      "dest": "/index.html"
-    }
   ]
 }
