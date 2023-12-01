@@ -46,9 +46,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <link rel="canonical" href="https://daniedu.github.io/4321Albert.github.io/" />
   <title>Registration and Login</title>
-  <link rel="stylesheet" href="../css/index.css" />
-  <link rel="stylesheet" href="../css/user.css" />
-  <!-- <link rel="stylesheet" href="../css/blog.css" /> -->
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/user.css" />
+  <!-- <link rel="stylesheet" href="/css/blog.css" /> -->
 </head>
 <div class="container">
   <div class="paper">
