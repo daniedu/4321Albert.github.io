@@ -24,6 +24,10 @@
       "destination": "/:path*.png"
     },
     {
+      "source": "/:path*.jpeg",
+      "destination": "/:path*.jpeg"
+    },
+    {
       "source": "/:path*.jpg",
       "destination": "/:path*.jpg"
     },
