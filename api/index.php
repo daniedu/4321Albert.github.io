@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Sweet Dreams</title>
 
-  <link rel="shortcut icon" type="image/png" href="img/sweet.png" />
+  <link rel="shortcut icon" type="image/png" href="/img/sweet.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet" />
@@ -108,7 +108,7 @@
     <header class="header">
       <div class="brand">
         <div>
-          <img alt="Imagen de la Avenida Principal" src="img/sweet.png" width="80" />
+          </img alt="Imagen de la Avenida Principal" src="/img/sweet.png" width="80" />
         </div>
         <h3 class="hotel-heading">Sweet Dreams</h3>
         <div class="user-actions">
@@ -152,10 +152,10 @@
       </div>
 
       <div class="about-us-images">
-        <img alt="Imagen de la Barra de Bebidas" src="img/about-us-img-1.jpeg" class="image image-1" />
-        <img alt="Imagen del Pasillo" src="img/about-us-img-2.jpeg" class="image image-2" />
-        <img alt="Imagen de la Piscina" src="img/about-us-img-3.jpeg" class="image image-3" />
-        <img alt="Imagen de una Habitacion De lujo" src="img/about-us-img-4.jpeg" class="image image-4" />
+        </img alt="Imagen de la Barra de Bebidas" src="/img/about-us-/img-1.jpeg" class="image image-1" />
+        </img alt="Imagen del Pasillo" src="/img/about-us-/img-2.jpeg" class="image image-2" />
+        </img alt="Imagen de la Piscina" src="/img/about-us-/img-3.jpeg" class="image image-3" />
+        </img alt="Imagen de una Habitacion De lujo" src="/img/about-us-/img-4.jpeg" class="image image-4" />
       </div>
     </section>
   </section>
@@ -172,7 +172,7 @@
 
       <div class="rooms-cards-wrapper">
         <div class="room-card">
-          <img alt="Imagen de la Habitacion Individual" src="img/single-room.jpeg" class="room-img" />
+          </img alt="Imagen de la Habitacion Individual" src="/img/single-room.jpeg" class="room-/img" />
           <div class="room-card-content">
             <h4 class="room-card-heading">Habitación individual</h4>
             <p class="room-card-paragraph">
@@ -187,7 +187,7 @@
         </div>
 
         <div class="room-card">
-          <img alt="Imagen de la Habitacion con Cama Doble" src="img/double-room.jpeg" class="room-img" />
+          </img alt="Imagen de la Habitacion con Cama Doble" src="/img/double-room.jpeg" class="room-/img" />
           <div class="room-card-content">
             <h4 class="room-card-heading">Cama Doble</h4>
             <p class="room-card-paragraph">
@@ -202,7 +202,7 @@
         </div>
 
         <div class="room-card">
-          <img alt="Imagen de la Habitacion de Lujo" src="img/lux.jpeg" class="room-img" />
+          </img alt="Imagen de la Habitacion de Lujo" src="/img/lux.jpeg" class="room-/img" />
           <div class="room-card-content">
             <h4 class="room-card-heading">Lujo</h4>
             <p class="room-card-paragraph">
@@ -216,7 +216,7 @@
           </div>
         </div>
         <div class="room-card">
-          <img alt="Imagen de la Habitacion VIP" src="img/vip.jpeg" class="room-img" />
+          </img alt="Imagen de la Habitacion VIP" src="/img/vip.jpeg" class="room-/img" />
           <div class="room-card-content">
             <h4 class="room-card-heading">VIP</h4>
             <p class="room-card-paragraph">
@@ -233,7 +233,7 @@
       <!-- Suite Familiar -->
       <div class="room-container">
         <div class="room-card">
-          <img alt="Imagen de la Suite Familiar" src="img/suite-familiar.jpg" class="room-img" />
+          </img alt="Imagen de la Suite Familiar" src="/img/suite-familiar.jpg" class="room-/img" />
           <div class="room-card-content">
             <h4 class="room-card-heading">Suite Familiar</h4>
             <p class="room-card-paragraph">
@@ -248,7 +248,7 @@
         </div>
         <!-- Habitación Ejecutiva -->
         <div class="room-card">
-          <img alt="Imagen de la Habitacion Ejecutiva" src="img/habitacion-ejecutiva.jpeg" class="room-img" />
+          </img alt="Imagen de la Habitacion Ejecutiva" src="/img/habitacion-ejecutiva.jpeg" class="room-/img" />
           <div class="room-card-content">
             <h4 class="room-card-heading">Habitación Ejecutiva</h4>
             <p class="room-card-paragraph">
@@ -263,7 +263,7 @@
         </div>
         <!-- Habitación con Vista al Mar -->
         <div class="room-card">
-          <img alt="Imagen de la Habitacion con Vista al Mar" src="img/habitacion-vista-mar.jpg" class="room-img" />
+          </img alt="Imagen de la Habitacion con Vista al Mar" src="/img/habitacion-vista-mar.jpg" class="room-/img" />
           <div class="room-card-content">
             <h4 class="room-card-heading">Habitación con Vista al Mar</h4>
             <p class="room-card-paragraph">
@@ -279,7 +279,7 @@
 
         <!-- Suite de Luna de Miel -->
         <div class="room-card">
-          <img alt="Imagen de la Suite de Luna de Miel" src="img/suite-luna-miel.jpg" class="room-img" />
+          </img alt="Imagen de la Suite de Luna de Miel" src="/img/suite-luna-miel.jpg" class="room-/img" />
           <div class="room-card-content">
             <h4 class="room-card-heading">Suite de Luna de Miel</h4>
             <p class="room-card-paragraph">
@@ -314,7 +314,7 @@
 
     <div class="event-cards-wrapper">
       <div class="event-card">
-        <img alt="Imagen Caridad y Amor con gente reunida" src="img/event-1.jpeg" class="event-img" />
+        </img alt="Imagen Caridad y Amor con gente reunida" src="/img/event-1.jpeg" class="event-/img" />
         <div class="event-card-content">
           <h4 class="room-card-heading">Caridad y Amor</h4>
           <p class="event-card-date">Fecha: Junio 10, 2024</p>
@@ -326,7 +326,7 @@
         </div>
       </div>
       <div class="event-card">
-        <img alt="Imagen Sena Navideña con regalos,velas y decoracion navideña blanca y roja" src="img/event-2.jpeg" class="event-img" />
+        </img alt="Imagen Sena Navideña con regalos,velas y decoracion navideña blanca y roja" src="/img/event-2.jpeg" class="event-/img" />
         <div class="event-card-content">
           <h4 class="room-card-heading">Sena Navideña</h4>
           <p class="event-card-date">fecha: Diciembre 24, 2024</p>
@@ -357,7 +357,7 @@
 
       <div class="restaurant-cards-container">
         <div class="restaurant-card">
-          <img alt="Imagen Bandeja Paisa con Chorizo, Huevo, Arepa, Aguacate, etc" src="img/plato1.jpeg" alt="Plato 1" class="restaurant-image" />
+          </img alt="Imagen Bandeja Paisa con Chorizo, Huevo, Arepa, Aguacate, etc" src="/img/plato1.jpeg" alt="Plato 1" class="restaurant-image" />
           <div class="restaurant-card-content">
             <h2 class="room-card-heading">Bandeja Paisa</h2>
             <p class="restaurant-card-details">
@@ -372,7 +372,7 @@
         </div>
 
         <div class="restaurant-card">
-          <img alt="Imagen de Sushis con salsa de soya" src="img/plato-2.png" alt="Plato 2" class="restaurant-image" />
+          </img alt="Imagen de Sushis con salsa de soya" src="/img/plato-2.png" alt="Plato 2" class="restaurant-image" />
           <div class="restaurant-card-content">
             <h2 class="room-card-heading">Shushi</h2>
             <p class="restaurant-card-details">
@@ -388,7 +388,7 @@
         </div>
 
         <div class="restaurant-card">
-          <img alt="Imagen de Paella con Macaron, Papa y arroz" src="img/plato-3.jpg" alt="Plato 3" class="restaurant-image" />
+          </img alt="Imagen de Paella con Macaron, Papa y arroz" src="/img/plato-3.jpg" alt="Plato 3" class="restaurant-image" />
           <div class="restaurant-card-content">
             <h2 class="room-card-heading">Paella</h2>
             <p class="restaurant-card-details">
@@ -426,7 +426,7 @@
       <div class="customers-card-wrapper">
         <div class="customer-card">
           <div class="customer-image-wrapper">
-            <img alt="imagen de Luis Lopez" src="img/costumer-1.jpeg" class="customer-image" />
+            </img alt="imagen de Luis Lopez" src="/img/costumer-1.jpeg" class="customer-image" />
           </div>
           <div class="customer-info">
             <h3 class="customer-fullname">Luis Lopez</h3>
@@ -443,7 +443,7 @@
         </div>
         <div class="customer-card">
           <div class="customer-image-wrapper">
-            <img alt="imagen de Toreto" src="img/toretto.jpeg" class="customer-image" />
+            </img alt="imagen de Toreto" src="/img/toretto.jpeg" class="customer-image" />
           </div>
           <div class="customer-info">
             <h3 class="customer-fullname">Toreto</h3>
@@ -515,22 +515,22 @@
           <h3 class="footer-heading">Galeria</h3>
           <div class="gallery-images">
             <div class="image-wrapper">
-              <img src="img/gallery-img-1.jpeg" class="footer-image" />
+              </img src="/img/gallery-/img-1.jpeg" class="footer-image" />
             </div>
             <div class="image-wrapper">
-              <img src="img/gallery-img-2.jpeg" class="footer-image" />
+              </img src="/img/gallery-/img-2.jpeg" class="footer-image" />
             </div>
             <div class="image-wrapper">
-              <img src="img/gallery-img-3.jpeg" class="footer-image" />
+              </img src="/img/gallery-/img-3.jpeg" class="footer-image" />
             </div>
             <div class="image-wrapper">
-              <img src="img/gallery-img-4.jpeg" class="footer-image" />
+              </img src="/img/gallery-/img-4.jpeg" class="footer-image" />
             </div>
             <div class="image-wrapper">
-              <img src="img/gallery-img-5.jpeg" class="footer-image" />
+              </img src="/img/gallery-/img-5.jpeg" class="footer-image" />
             </div>
             <div class="image-wrapper">
-              <img src="img/gallery-img-6.jpeg" class="footer-image" />
+              </img src="/img/gallery-/img-6.jpeg" class="footer-image" />
             </div>
           </div>
         </div>
