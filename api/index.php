@@ -82,18 +82,18 @@
           <a href="#clientes-section" class="navigation-link">Clientes</a>
         </li>
         <li class="navigation-item">
-          <a href="db/cotizacion.php" class="navigation-link" id="cotizar-link" target="_blank">Cotiza tu reserva</a>
+          <a href="api/db/cotizacion.php" class="navigation-link" id="cotizar-link" target="_blank">Cotiza tu reserva</a>
         </li>
         <li class="navigation-item">
-          <a href="db/descuentos.php" class="navigation-link" id="descuentos-link">Descubre Descuentos</a>
-        </li>
-        <li class="navigation-item"></li>
-        <li class="navigation-item">
-          <a href="blog/informacionGeneral.php" class="navigation-link" id="descuentos-link">Nuestros Blog</a>
+          <a href="api/db/descuentos.php" class="navigation-link" id="descuentos-link">Descubre Descuentos</a>
         </li>
         <li class="navigation-item"></li>
         <li class="navigation-item">
-          <a href="blog/encuestas.php" class="navigation-link" id="descuentos-link">Nuestras Encuestas</a>
+          <a href="api/blog/informacionGeneral.php" class="navigation-link" id="descuentos-link">Nuestros Blog</a>
+        </li>
+        <li class="navigation-item"></li>
+        <li class="navigation-item">
+          <a href="api/blog/encuestas.php" class="navigation-link" id="descuentos-link">Nuestras Encuestas</a>
         </li>
         <li class="navigation-item"></li>
       </ul>
@@ -112,8 +112,8 @@
         </div>
         <h3 class="hotel-heading">Sweet Dreams</h3>
         <div class="user-actions">
-          <a href="user/login.php" class="login-button login">Iniciar sesion</a>
-          <a href="user/register.php" class="register-button">Registrarse</a>
+          <a href="api/user/login.php" class="login-button login">Iniciar sesion</a>
+          <a href="api/user/register.php" class="register-button">Registrarse</a>
         </div>
       </div>
       <div class="banner">
