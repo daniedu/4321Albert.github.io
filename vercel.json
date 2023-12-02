@@ -11,6 +11,10 @@
       "destination": "/api/index.php"
     },
     {
+      "source": "/",
+      "destination": "/api/index.php"
+    },
+    {
       "source": "/:path*.js",
       "destination": "/:path*.js"
     },
