@@ -5,7 +5,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="/css/newBooking.css" />
+  <link rel="stylesheet" href="../css/newBooking.css" />
   <meta name="keywords" content="hotel, sweet, dreams,reservar, entrar, booking, book, pasar" />
   <link rel="canonical" href="https://daniedu.github.io/4321Albert.github.io/bookigns/newBooking.php" />
 </head>

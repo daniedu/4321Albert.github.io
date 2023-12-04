@@ -272,14 +272,14 @@ const eventos = [
     descripcion: "Una noche llena de caridad y amor.",
     fecha: "Junio 10, 2024",
     lugar: "Sala de conferencias",
-    imagen: "/img/event-1.jpeg",
+    imagen: "img/event-1.jpeg",
   },
   {
     nombre: "Sena Navideña",
     descripcion: "Celebra la Navidad con nosotros en una noche mágica.",
     fecha: "Diciembre 24, 2024",
     lugar: "Sala de Eventos de Sweet Dreams",
-    imagen: "/img/event-2.jpeg",
+    imagen: "img/event-2.jpeg",
   },
 ];
 const eventCards = document.querySelectorAll(".event-card");
