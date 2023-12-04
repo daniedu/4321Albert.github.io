@@ -21,7 +21,7 @@ header("Location: /")
     <div class="container">
         <h2>Éxito</h2>
         <p>Se ha Cerrado Sesion de Manera Exitosa</p>
-        <a href="/index.php">Volver al panel de usuario</a>
+        <a href="../../index.php">Volver al panel de usuario</a>
     </div>
 </body>
 

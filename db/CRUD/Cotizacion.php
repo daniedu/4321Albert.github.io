@@ -1,6 +1,8 @@
 <?php
-class CotizacionCRUD {
-    public static function create($nombre, $correo, $telefono, $servicio, $fecha, $personas, $comentarios) {
+class CotizacionCRUD
+{
+    public static function create($nombre, $correo, $telefono, $servicio, $fecha, $personas, $comentarios)
+    {
         $cotizacion = R::dispense('cotizacion');
         $cotizacion->nombre = $nombre;
         $cotizacion->correo = $correo;
@@ -12,11 +14,17 @@ class CotizacionCRUD {
         return R::store($cotizacion);
     }
 
-    public static function read($cotizacionId) {
+    public static function read($cotizacionId)
+    {
         return R::load('cotizacion', $cotizacionId);
     }
-
-    public static function update($cotizacionId, $nombre, $correo, $telefono, $servicio, $fecha, $personas, $comentarios) {
+    public static function findByID($cotizacionId)
+    {
+        $cotizacion = R::findOne('cotizacion', 'id = ?', [$cotizacionId]);
+        return $cotizacion;
+    }
+    public static function update($cotizacionId, $nombre, $correo, $telefono, $servicio, $fecha, $personas, $comentarios)
+    {
         $cotizacion = R::load('cotizacion', $cotizacionId);
         if ($cotizacion) {
             $cotizacion->nombre = $nombre;
@@ -32,7 +40,8 @@ class CotizacionCRUD {
         return false;
     }
 
-    public static function delete($cotizacionId) {
+    public static function delete($cotizacionId)
+    {
         $cotizacion = R::load('cotizacion', $cotizacionId);
         if ($cotizacion) {
             R::trash($cotizacion);

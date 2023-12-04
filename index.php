@@ -82,19 +82,19 @@
           <a href="#clientes-section" class="navigation-link">Clientes</a>
         </li>
         <li class="navigation-item">
-          <a href="db/cotizacion.php" class="navigation-link" id="cotizar-link" target="_blank">Cotiza tu reserva</a>
+          <a href="cotizaciones/cotizacion.php" class="navigation-link" id="cotizar-link" target="_blank">Cotiza tu reserva</a>
         </li>
         <li class="navigation-item">
-          <a href="db/descuentos.php" class="navigation-link" id="descuentos-link">Descubre Descuentos</a>
+          <a href="descuentos/descuentos.php" class="navigation-link" id="descuentos-link">Descubre Descuentos</a>
         </li>
-        <li class="navigation-item"></li>
+
         <li class="navigation-item">
           <a href="blog/informacionGeneral.php" class="navigation-link" id="descuentos-link">Nuestros Blog</a>
         </li>
-        <li class="navigation-item"></li>
-        <li class="navigation-item">
+
+        <!-- <li class="navigation-item">
           <a href="blog/encuestas.php" class="navigation-link" id="descuentos-link">Nuestras Encuestas</a>
-        </li>
+        </li> -->
         <li class="navigation-item"></li>
       </ul>
 

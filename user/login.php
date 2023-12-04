@@ -16,11 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (empty($password)) {
     $errors[] = "Password is required.";
   }
-
+  echo "Invalid username or password: " . $username . " (" . $password . ")";
   if (empty($errors)) {
     $user = UsuarioCrud::login($username, $password);
-    echo "New User" . $user;
-    echo "New User" . $user["id"];
+
     if ($user !== null) {
       SessionManager::setSessionData('user_id', $user['id']);
       SessionManager::setSessionData('user_name', $user['nombre']);
@@ -32,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
       // echo "$username" + $username;
       // echo "$password" + $password;
-      echo "Invalid username or password." + $password + $username;
+      echo "Invalid username or password: " . $username . " (" . $password . ")";
     }
   }
 }
@@ -46,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <link rel="canonical" href="https://daniedu.github.io/4321Albert.github.io/" />
   <title>Registration and Login</title>
-  <link rel="stylesheet" href="../css/index.css" />
+  <!-- <link rel="stylesheet" href="../css/index.css" /> -->
   <link rel="stylesheet" href="../css/user.css" />
   <!-- <link rel="stylesheet" href="../css/blog.css" /> -->
 </head>
