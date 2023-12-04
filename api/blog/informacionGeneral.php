@@ -3,12 +3,12 @@
 
 <head>
   <title>Sweet Dreams</title>
-  <link rel="shortcut icon" type="image/png" href="img/sweet.png" />
+  <link rel="shortcut icon" type="image/png" href="/img/sweet.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/index.css" />
-  <link rel="stylesheet" href="../css/blog.css" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/blog.css" />
   <meta name="keywords" content="informacion, hotel, sweet, dreams, cuestinario, questionario, opinion, descuentos" />
   <link rel="canonical" href="https://daniedu.github.io/4321Albert.github.io/blog/informacionGeneral.php" />
   <meta name="robots" content="index, follow" />
